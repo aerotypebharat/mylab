@@ -1,0 +1,103 @@
+//*******************************************************************************
+
+// demo progarm call a class demo
+
+//which returns two parameter ferom two method
+
+//name  and age
+
+//built in sub class
+
+//*********************************************************************************
+
+
+
+
+
+// including package
+
+
+
+// calling main public class
+
+
+public class Grep{
+
+
+
+	public static void main(String[] args){
+
+
+
+		demo demo1 = new demo(); // creating DEMO1 an object of demo class
+
+
+
+
+
+		demo1.setName("willson");  // passing value to parameter in sub class 
+
+		demo1.setAge(40);
+
+
+
+		System.out.println("Hello World Again!!\n" +demo1.getName() + "\n" + demo1.getAge() ); //accessing two different methods of class demo
+
+
+
+	}
+
+}
+
+
+
+class demo{					// declaring a class
+
+	private String name;  // parameters of class
+
+	private int age;
+
+	demo(){						// class constructor
+
+		name = "hello man";
+
+		age = 10;
+
+
+	}
+
+
+	// setting parameters
+
+	public void setName(String anyName){
+
+		name = anyName;;
+
+	}
+
+	public void  setAge(int anyAge){
+
+		 age = anyAge;
+
+	}
+
+
+
+	// methods returning parameters
+
+	public String getName(){
+
+		return name;
+
+	}
+
+	public int getAge(){
+
+		return age;
+
+	}
+
+
+}
+
+
